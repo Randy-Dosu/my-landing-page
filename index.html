@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Randy Odawutey - Information Technology Student & Software Developer Portfolio. BSc IT at KNUST. Passionate about software development, AI, and solving real-world problems through technology."
+    />
+    <meta
+      name="keywords"
+      content="Randy Odawutey, KNUST, Software Developer, IT Student, Portfolio, AI, Web Development"
+    />
+    <meta name="author" content="Randy Odawutey" />
+    <title>Randy Odawutey | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- AOS - Animate On Scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">
+          <span>R</span><span>A</span><span>N</span><span>D</span><span>Y</span>
+        </div>
+        <p class="loader-subtitle">Loading Portfolio...</p>
+      </div>
+    </div>
+
+    <!-- ==================== CUSTOM CURSOR ==================== -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+        
+          <span class="logo-text">RO</span>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#academics" class="nav-link">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#certifications" class="nav-link">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+          <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
+          <h1 class="hero-name">Randy Odawutey</h1>
+          <div class="hero-title-wrapper">
+            <span class="hero-title-prefix">I'm a </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Passionate Information Technology student at KNUST with interests in
+            software development, artificial intelligence, databases, and
+            solving real-world problems through technology.
+          </p>
+          <div class="hero-buttons">
+            <a href="./assets/resume/Randy_Odawutey_CV.docx" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <i class="fas fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="#" class="social-link" aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+          <div class="image-wrapper">
+            <div class="image-border"></div>
+            <div class="profile-image">
+              <div class="profile-placeholder">
+                <i class="fas fa-user"><img src="./assets/images/ChatGPT Image Jun 16, 2026, 12_14_15 AM.png" alt="profile-image"></i>
+                <span>RO</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-1">
+              <i class="fas fa-code"></i>
+              <span>Developer</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fas fa-brain"></i>
+              <span>AI Explorer</span>
+            </div>
+            <div class="floating-badge badge-3">
+              <i class="fas fa-lightbulb"></i>
+              <span>Entrepreneur</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <div class="mouse">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get to Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div
+            class="about-content"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h3 class="about-subtitle">Who I Am</h3>
+            <p class="about-text">
+              I'm <strong>Randy Odawutey</strong>, a dedicated and
+              forward-thinking Information Technology student at
+              <strong
+                >Kwame Nkrumah University of Science and Technology
+                (KNUST)</strong
+              >. My journey in technology began with a deep curiosity about how
+              software systems work and how they can be leveraged to solve
+              real-world problems.
+            </p>
+            <p class="about-text">
+              As a software developer and tech enthusiast, I am passionate about
+              creating innovative solutions that bridge the gap between
+              technology and everyday life. My interests span across
+              <strong
+                >software engineering, artificial intelligence, database
+                management,</strong
+              >
+              and <strong>cloud computing</strong>.
+            </p>
+            <p class="about-text">
+              I believe in continuous learning and constantly challenging myself
+              to grow. Whether it's building a new application, exploring AI
+              models, or contributing to open-source projects, I'm always eager
+              to expand my skill set and make a meaningful impact in the tech
+              community.
+            </p>
+            <p class="about-text">
+              Looking ahead, I aspire to become a world-class software engineer
+              and technology innovator, building impactful solutions that
+              improve education, business, and everyday life through technology
+              and artificial intelligence.
+            </p>
+          </div>
+          <div class="about-info" data-aos="fade-left" data-aos-duration="800">
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="info-icon"><i class="fas fa-university"></i></div>
+              <div class="info-detail">
+                <span class="info-label">University</span>
+                <span class="info-value">KNUST</span>
+              </div>
+            </div>
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="info-detail">
+                <span class="info-label">Program</span>
+                <span class="info-value">BSc Information Technology</span>
+              </div>
+            </div>
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="info-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="info-detail">
+                <span class="info-label">Current Level</span>
+                <span class="info-value">Undergraduate</span>
+              </div>
+            </div>
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-detail">
+                <span class="info-label">Location</span>
+                <span class="info-value">Accra, Ghana</span>
+              </div>
+            </div>
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="info-icon"><i class="fas fa-language"></i></div>
+              <div class="info-detail">
+                <span class="info-label">Languages</span>
+                <span class="info-value">English, Twi</span>
+              </div>
+            </div>
+            <div class="info-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="info-icon"><i class="fas fa-heart"></i></div>
+              <div class="info-detail">
+                <span class="info-label">Interests</span>
+                <span class="info-value">Software Dev, AI, Databases</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACADEMIC JOURNEY SECTION ==================== -->
+    <section id="academics" class="section academics-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Education Path</span>
+          <h2 class="section-title">Academic Journey</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div
+            class="timeline-item left"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-icon"><i class="fas fa-school"></i></div>
+              <span class="timeline-date">2022 – 2024</span>
+              <h3>Manya Krobo Senior High School</h3>
+              <p>
+                Pursued studies with a focus on science and information
+                technology. Developed foundational programming skills and
+                participated in ICT competitions.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">General Science</span>
+                <span class="tag">Elective ICT</span>
+                <span class="tag">STEM Education</span>
+              </div>
+            </div>
+          </div>
+        
+          <div
+            class="timeline-item right"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot active"></div>
+            <div class="timeline-card glass-card active">
+              <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <span class="timeline-date">2025 – Present</span>
+              <h3>Kwame Nkrumah University of Science and Technology</h3>
+              <h4>BSc. Information Technology</h4>
+              <p>
+                Currently pursuing a degree in Information Technology with a
+                focus on software development, databases, AI, and cloud
+                computing. Actively engaged in academic projects and tech
+                communities.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Software Development</span>
+                <span class="tag">Databases</span>
+                <span class="tag">AI/ML</span>
+                <span class="tag">Networking</span>
+              </div>
+              <div class="timeline-courses">
+                <h5>Relevant Courses:</h5>
+                <div class="course-list">
+                  <span class="course-tag">Data Structures & Algorithms</span>
+                  <span class="course-tag">Database Management</span>
+                  <span class="course-tag">Software Engineering</span>
+                  <span class="course-tag">Web Development</span>
+                  <span class="course-tag">Computer Networks</span>
+                  <span class="course-tag">Operating Systems</span>
+                  <span class="course-tag">Artificial Intelligence</span>
+                </div>
+              </div>
+              <div class="timeline-achievements">
+                <h5>Academic Highlights:</h5>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Active member of CSS
+                    student community
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Active member of Claude Cuilder's Club
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Building real-world
+                    projects alongside academics
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Active member  of Developers and Programmers of KNUST
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div
+            class="skill-category glass-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-category-header">
+              <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div
+            class="skill-category glass-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Frontend Development</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Backend Development</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div
+            class="skill-category glass-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MS SQLServer</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="65"></div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="skill-category glass-card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Linux</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Vercel / Netlify</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emerging Technologies -->
+          <div
+            class="skill-category glass-card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Emerging Technologies</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Artificial Intelligence</span>
+                  <span class="skill-percent">55%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="55"></div>
+                </div>
+              </div>
+            
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Cybersecurity</span>
+                  <span class="skill-percent">40%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="40"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div
+            class="project-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-image">
+              <div class="project-placeholder">
+                <img src="./assets/images/Portfolio-image.png" alt="Portfolio preview" />
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                A modern, responsive portfolio website built with HTML, CSS, and
+                JavaScript featuring glassmorphism design, animations, and dark
+                mode.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn btn-sm btn-outline"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="project-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Rancle Prep AI</h3>
+              <p class="project-description">
+                An AI-powered exam preparation platform that helps students
+                study smarter with personalized learning paths and practice
+                questions.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>AI/ML</span>
+                <span>Flask</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn btn-sm btn-outline"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="project-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="project-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Rancle AgriConnect</h3>
+              <p class="project-description">
+                An online marketplace that connect farmers with buyers.
+              </p>
+              <div class="project-tech">
+                <span>SQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Randy-Dosu/portfolio-website" class="btn btn-sm btn-primary"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn btn-sm btn-outline"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Experience & Leadership</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="experience-timeline">
+          
+          <div class="exp-item" data-aos="fade-left" data-aos-delay="200">
+            <div class="exp-dot"></div>
+            <div class="exp-card glass-card">
+              <div class="exp-header">
+                <div class="exp-icon"><i class="fas fa-hands-helping"></i></div>
+                <div>
+                  <h3>Volunteer Developer</h3>
+                  <span class="exp-org">Open Source Community</span>
+                </div>
+              </div>
+              <span class="exp-date">2023 – Present</span>
+              <p>
+                Contributing to open-source projects and volunteering technical
+                skills for community-driven software solutions and educational
+                initiatives.
+              </p>
+              <div class="exp-tags">
+                <span>Open Source</span>
+                <span>Collaboration</span>
+                <span>Technical Writing</span>
+              </div>
+            </div>
+          </div>
+          <div class="exp-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="exp-dot"></div>
+            <div class="exp-card glass-card">
+              <div class="exp-header">
+                <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <h3>Hackathon Participant</h3>
+                  <span class="exp-org">Various Tech Competitions</span>
+                </div>
+              </div>
+              <span class="exp-date">2023 – Present</span>
+              <p>
+                Participating in hackathons and coding competitions, building
+                innovative solutions under time constraints while collaborating
+                with diverse teams.
+              </p>
+              <div class="exp-tags">
+                <span>Problem Solving</span>
+                <span>Teamwork</span>
+                <span>Innovation</span>
+              </div>
+            </div>
+          </div>
+          <div class="exp-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="exp-dot"></div>
+            <div class="exp-card glass-card">
+              <div class="exp-header">
+                <div class="exp-icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div>
+                  <h3>Peer Tutor & Mentor</h3>
+                  <span class="exp-org">KNUST Academic Support</span>
+                </div>
+              </div>
+              <span class="exp-date">2023 – Present</span>
+              <p>
+                Mentoring fellow students in programming, database management,
+                and web development. Creating study materials and conducting
+                review sessions.
+              </p>
+              <div class="exp-tags">
+                <span>Teaching</span>
+                <span>Mentoring</span>
+                <span>Communication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="section certifications-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">My Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="certs-grid">
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Cybersecurity Fundamentals</h3>
+        <span class="cert-org">IBM SkillsBuild</span>
+        <span class="cert-date">2026</span>
+        <a
+          href="./assets/certificates/Screenshot 2026-06-16 191419.png"
+          class="cert-link"
+          target="_blank"
+        >
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>Web Development Fundamentals</h3>
+        <span class="cert-org">IBM SkillsBuild</span>
+        <span class="cert-date">2026</span>
+        <a
+          href="./assets/certificates/Screenshot 2026-06-16 191342.png"
+          class="cert-link"
+          target="_blank"
+        >
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+        <h3>Information Technology Fundamentals</h3>
+        <span class="cert-org">IBM SkillsBuild</span>
+        <span class="cert-date">2026</span>
+        <a
+          href="./assets/certificates/Screenshot 2026-06-16 191456.png"
+          class="cert-link"
+          target="_blank"
+        >
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-pencil-ruler"></i>
+        </div>
+        <h3>User Experience Design Fundamentals</h3>
+        <span class="cert-org">IBM SkillsBuild</span>
+        <span class="cert-date">2026</span>
+        <a
+          href="./assets/certificates/Screenshot 2026-06-16 191524.png"
+          class="cert-link"
+          target="_blank"
+        >
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3></h3>
+        <span class="cert-org">Claude 101</span>
+        <span class="cert-date">2026</span>
+        <a href="./assets/certificates/Screenshot 2026-06-16 195631.png" class="cert-link">
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+
+      <div
+        class="cert-card glass-card"
+        data-aos="zoom-in"
+        data-aos-delay="600"
+      >
+        <div class="cert-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <h3>Claude Code 101</h3>
+        <span class="cert-org">IBM SkillsBuild</span>
+        <span class="cert-date">2026</span>
+        <a href="./assets/certificates/Screenshot 2026-06-16 195725.png" class="cert-link">
+          <i class="fas fa-external-link-alt"></i> Verify
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Numbers</span>
+          <h2 class="section-title">Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="achievements-grid">
+          <div
+            class="achievement-card glass-card"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="achievement-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="counter" data-target="3">3</div>
+            <span class="counter-suffix"></span>
+            <p>Projects Completed</p>
+          </div>
+          <div
+            class="achievement-card glass-card"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="achievement-icon"><i class="fas fa-cogs"></i></div>
+            <div class="counter" data-target="20">7</div>
+            <span class="counter-suffix">+</span>
+            <p>Technologies Learned</p>
+          </div>
+          <div
+            class="achievement-card glass-card"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="achievement-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="counter" data-target="6">10+</div>
+            <span class="counter-suffix"></span>
+            <p>Certifications Earned</p>
+          </div>
+          <div
+            class="achievement-card glass-card"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="achievement-icon"><i class="fas fa-clock"></i></div>
+            <div class="counter" data-target="4">4</div>
+            <span class="counter-suffix">+</span>
+            <p>Years of Learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNOLOGY WALL SECTION ==================== -->
+    <section id="techwall" class="section techwall-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Tech Stack</span>
+          <h2 class="section-title">Technology Wall</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-server"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="450">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="500">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="550">
+            <i class="fab fa-linux"></i>
+            <span>Linux</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="600">
+            <i class="fas fa-brain"></i>
+            <span>AI Tools</span>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="600">
+            <i class="devicon-cplusplus-plain"></i>
+            <span>C++</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CAREER GOALS SECTION ==================== -->
+    <section id="goals" class="section goals-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Vision</span>
+          <h2 class="section-title">Career Goals</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="goals-content">
+          <div
+            class="goals-statement glass-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="goals-quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="goals-text">
+              "My goal is to become a world-class software engineer, Entrepreneur and
+              technology innovator, building impactful solutions that improve
+              education, business, and everyday life through technology and
+              artificial intelligence."
+            </p>
+          </div>
+          <div class="roadmap" data-aos="fade-up" data-aos-delay="200">
+            <div class="roadmap-track">
+              <div class="roadmap-line"></div>
+              <div class="roadmap-step" data-aos="zoom-in" data-aos-delay="100">
+                <div class="roadmap-dot">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="roadmap-card glass-card">
+                  <h4>Student</h4>
+                  <p>
+                    Building foundations in IT, programming and electronics.
+                  </p>
+                </div>
+              </div>
+              <div class="roadmap-step" data-aos="zoom-in" data-aos-delay="200">
+                <div class="roadmap-dot"><i class="fas fa-code"></i></div>
+                <div class="roadmap-card glass-card">
+                  <h4>Developer</h4>
+                  <p>
+                    Creating software solutions and gaining real-world
+                    experience
+                  </p>
+                </div>
+              </div>
+              <div class="roadmap-step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="roadmap-dot"><i class="fas fa-cogs"></i></div>
+                <div class="roadmap-card glass-card">
+                  <h4>Software Engineer</h4>
+                  <p>
+                    Engineering scalable, robust systems and leading projects
+                  </p>
+                </div>
+              </div>
+              <div class="roadmap-step" data-aos="zoom-in" data-aos-delay="400">
+                <div class="roadmap-dot"><i class="fas fa-brain"></i></div>
+                <div class="roadmap-card glass-card">
+                  <h4>AI Engineer</h4>
+                  <p>
+                    Developing intelligent systems and advancing AI applications
+                  </p>
+                </div>
+              </div>
+              <div class="roadmap-step" data-aos="zoom-in" data-aos-delay="500">
+                <div class="roadmap-dot"><i class="fas fa-lightbulb"></i></div>
+                <div class="roadmap-card glass-card">
+                  <h4>Tech Entrepreneur</h4>
+                  <p>
+                    Founding innovative tech ventures that transform industries
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What People Say</span>
+          <h2 class="section-title">Testimonials</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="testimonials-grid">
+          <div
+            class="testimonial-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Randy is an exceptional student with a remarkable ability to
+              grasp complex concepts quickly. His dedication to learning and
+              passion for technology sets him apart from his peers."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>Dr. Professor Name</h4>
+                <span>Lecturer, KNUST</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="testimonial-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with Randy on our team project was a great experience. He
+              brought innovative ideas and consistently delivered high-quality
+              code. A true team player with leadership potential."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>Colleague Name</h4>
+                <span>Project Teammate, KNUST</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="testimonial-card glass-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">
+              "Randy's enthusiasm for technology is infectious. He's always
+              willing to help others and his problem-solving skills make him an
+              invaluable member of any tech community."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="testimonial-info">
+                <h4>Mentor Name</h4>
+                <span>Senior Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+            <h3>Let's Work Together</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Feel free to reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a
+                    href="mailto:randy.odawutey@gmail.com"
+                    class="contact-value"
+                    >randy.odawutey@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+233XXXXXXXXX" class="contact-value"
+                    >+233 25 628 8571</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <a href="#" class="contact-value"
+                    >github.com/randy-odawutey</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="#" class="contact-value"
+                    >linkedin.com/in/randy-odawutey</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-link-lg" aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="social-link-lg" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link-lg" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-link-lg" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link-lg" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="contact-form-wrapper"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <form id="contactForm" class="contact-form glass-card">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <span class="form-error" id="subjectError"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-full"
+                id="submitBtn"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">
+              <span class="logo-bracket">&lt;</span>
+              <span class="logo-text">Randy Odawutey</span>
+              <span class="logo-bracket">/&gt;</span>
+            </a>
+            <p class="footer-tagline">
+              Building the future through technology, innovation, and continuous
+              learning.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>More</h4>
+            <ul>
+              <li><a href="#academics">Academics</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+              <li><a href="#goals">Career Goals</a></li>
+              <li><a href="#">Download CV</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-envelope"></i> randy.odawutey@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Kumasi, Ghana</p>
+            <p><i class="fas fa-graduation-cap"></i> KNUST</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Randy Odawutey. All Rights
+            Reserved.
+          </p>
+          <p>
+            Designed & Built with
+            <i class="fas fa-heart" style="color: #ef4444"></i> by Randy
+            Odawutey
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/particle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
