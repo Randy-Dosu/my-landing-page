@@ -502,10 +502,6 @@
     scroll-behavior: auto !important;
   }
 
-  .skill-progress {
-    transition: none !important;
-  }
-
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;

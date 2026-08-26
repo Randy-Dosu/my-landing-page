@@ -16,7 +16,7 @@
     initThemeToggle();
     initScrollProgress();
     initBackToTop();
-    initSkillBars();
+
     initCounters();
     initContactForm();
     initCustomCursor();
@@ -244,31 +244,6 @@
         top: 0,
         behavior: "smooth",
       });
-    });
-  }
-
-  // ==================== SKILL BARS ANIMATION ====================
-  function initSkillBars() {
-    const skillBars = document.querySelectorAll(".skill-progress");
-
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            const width = entry.target.getAttribute("data-width");
-            entry.target.style.width = width + "%";
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.3,
-        rootMargin: "0px 0px -50px 0px",
-      },
-    );
-
-    skillBars.forEach(function (bar) {
-      observer.observe(bar);
     });
   }
 
