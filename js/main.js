@@ -336,40 +336,35 @@ const EMAILJS_CONFIG = {
 
   function initContactForm() {
     const form = document.getElementById("contactForm");
-    if (!form) return;
-
     const submitBtn = document.getElementById("submitBtn");
     const status = document.getElementById("formStatus");
+
+    if (!form || !submitBtn) return;
 
     if (window.emailjs) {
       emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
     }
 
-    form.addEventListener("submit", function (event) {
+    function submitForm(event) {
       event.preventDefault();
 
       if (!validateForm(form)) return;
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
-      }
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
       if (status) {
-        status.className = "form-status";
-        status.textContent = "";
+        status.textContent = "Sending your message...";
+        status.className = "form-status info";
       }
 
       if (!window.emailjs) {
         if (status) {
+          status.textContent = "EmailJS failed to load. Check your script.";
           status.className = "form-status error";
-          status.textContent = "EmailJS is not loaded.";
         }
-
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Send Message";
-        }
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
         return;
       }
 
@@ -377,25 +372,27 @@ const EMAILJS_CONFIG = {
         .sendForm(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, form)
         .then(function () {
           if (status) {
-            status.className = "form-status success";
             status.textContent = "Message sent successfully!";
+            status.className = "form-status success";
           }
           form.reset();
         })
-        .catch(function () {
+        .catch(function (error) {
+          console.error("EmailJS error:", error);
           if (status) {
-            status.className = "form-status error";
             status.textContent =
-              "Something went wrong. Please email me directly.";
+              "Failed to send message. Please try again later.";
+            status.className = "form-status error";
           }
         })
         .finally(function () {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Send Message";
-          }
+          submitBtn.disabled = false;
+          submitBtn.innerHTML =
+            '<i class="fas fa-paper-plane"></i> Send Message';
         });
-    });
+    }
+
+    form.addEventListener("submit", submitForm);
   }
 
   function validateForm(form) {
