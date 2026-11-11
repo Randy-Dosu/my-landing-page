@@ -1276,6 +1276,37 @@ textarea {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* Screenshots fill the 200px frame, so wide images no longer leave a
+   gradient strip underneath. */
+.project-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Full-page app screenshots: anchor to the top so the app header shows. */
+.project-placeholder img.project-shot-top {
+  object-position: top center;
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: var(--warning);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .project-overlay {
   position: absolute;
   top: 0;
@@ -1349,6 +1380,12 @@ textarea {
 .project-links {
   display: flex;
   gap: 12px;
+}
+
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 /* ==================== EXPERIENCE SECTION ==================== */
